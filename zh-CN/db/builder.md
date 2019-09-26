@@ -27,7 +27,7 @@ foreach ($users as $user) {
 ```
 你还可以使用 `Collection` 所有方法 `Collection` 提供了强大的对象操作方法。
 
-如果想更快的查询全部的数据可以用`cursor`方法，底层采用 `yield` 实现。其中每个结果都是 `Array`
+如果想更快的查询全部的数据可以用`cursor`方法，底层采用 `yield` 实现。其中每个结果都是 `Object`
 ```php
  $users = DB::table('user')->cursor();
  foreach ($users as $user){
